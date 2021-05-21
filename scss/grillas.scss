@@ -1,0 +1,58 @@
+//   ------------------ GRID HOME ----------------------  //
+.grillaHome
+{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: none;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+// -------------------- GRID STOCK -----------------  // 
+.grilla 
+{
+    height: auto;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    display:grid;
+    padding: none;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+/* <!-- flexbox -->  */
+.secNosotros
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+// -------------- FLEX GALERIA ------------------- //
+.secGaleria
+{
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #748386
+    
+
+}
+
+.secGaleria img 
+{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    padding: 25px;
+}
+  
+ 

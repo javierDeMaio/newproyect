@@ -1,0 +1,394 @@
+// ------------------------ IMPORTS -----------------------//
+@import 'grillas';
+@import 'bodycustom';
+// ------------------------ BLOQUES --------------------------//
+.encabezado 
+{
+    text-align: center;
+    background-image:url(../agencia/agencia2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+}
+
+.encabezado__nav
+{
+    
+
+    ul
+    {
+        list-style: none;
+        font-size: 0;
+        width: 100%;
+        padding: 0px;
+    }
+
+       li
+        {
+        display:inline-block;
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+        width: 19%;
+        border-width: thick;
+        }
+
+        ul ul
+        {
+         position: absolute;
+         display: none;
+        }
+
+        ul ul li
+        { 
+             display: block;
+            
+        }
+            ul li:hover ul
+            {
+                display: block;
+                background-color:#748386;
+                width: 100%;
+                text-align: center;
+                padding: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                text-shadow: 1px 1px 2px black;
+              }
+             
+}
+
+.encabezado__titulo
+{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.section__form
+{
+    background: url(../agencia/formimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section
+{
+    background-color: gray ;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.section:hover
+{
+    background: #9DC7C8;
+
+}
+
+.section__titulo 
+{
+    font-size: 200%;
+    color:white;
+    text-shadow: 1px 1px 2px black;
+}
+.division__p
+{
+    color:white;
+    text-shadow: 1px 1px 2px black;
+}
+.section__em
+{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.division
+{
+    text-align: center;
+    transition: all 0.5s ease;
+    background: url("../agencia/agencia3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.division:hover
+{
+    background: url("../agencia/agencia10.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.division__titulo
+{
+    text-transform: capitalize;
+    color: white;
+    margin: 30px;
+    padding: 30px;
+}
+.articulo 
+{
+    margin: 30px;
+    padding: 30px;
+    border-style: solid; 
+    border-color:#9DC7C8;
+    text-align: center; 
+}
+.articuloBackground 
+{
+    background: url(../agencia/iconmarca.png);
+    background-size: 50%;
+    background-repeat: repeat;
+}
+
+.articulo__parrafo 
+{
+    background:  #9DC7C8;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+}
+
+.articulo__span 
+{
+    font-weight: bold;
+}
+
+.piePagina
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    margin: 0px;
+}
+.piePaginaSection 
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: black;
+}
+.piePagina_ul
+{
+    padding: 0px;
+}
+.piePaginaP
+{
+    color: white;
+    text-shadow: 1px 1px 2px white;
+}
+
+.secStock
+{
+    background-color: lightslategrey;
+    table-layout:auto;
+    border-style:solid;
+    width: 100%;
+}
+
+.secStock__titulo
+{
+    font-weight: bold;
+    
+}
+
+.secStock__tabla
+{
+    table-layout: fixed;
+    width: 100%;
+    text-decoration-color: white ;
+}
+
+.divStock
+{
+    color: white;
+}
+
+.divStock__lista 
+{
+    list-style-type: upper-roman;
+    list-style-position:inside;
+}
+
+
+.encNosotros 
+{
+    @extend .encabezado;
+}
+
+.encNosotros__nav
+{
+   @extend .encabezado__nav;
+}
+
+.pieNostros 
+{
+   @extend .piePagina;
+}
+
+.encContactanos 
+{
+    @extend .encabezado;
+}
+
+.encContactanos__nav 
+{
+  @extend .encabezado__nav;
+}
+
+.pieContactanos
+{
+  @extend .piePagina;
+}
+
+.encGaleria 
+{
+    @extend .encabezado;
+}
+.encGaleria__nav 
+{
+   @extend .encabezado__nav;
+}
+.pieGaleria
+{
+    @extend .piePagina;
+}
+// ------------------- TRANSFORMS --------------------//
+#logoOsvaldo:hover
+{
+    transform: scale(1.1,1.5);
+}
+#tituloHeader:hover
+{
+    transform: scale(1.3);
+    transition: all 0.5s ease;
+}
+// ---------------- MEDIA CONTIONS ------------------//
+@media only screen and (max-width:425px)
+{
+    .encabezado__nav li
+    {
+        display:block;
+        margin-top: 1em;
+        margin-bottom: 1rem;
+        width: 100% ;
+        line-height: 2rem;
+        justify-content: center;
+    }    
+    
+        .encNosotros__nav li
+    {
+        display:block ;
+        margin-top: 1em;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+        column-gap: 1px;
+    }
+        .encabezado__nav ul 
+        {
+            background-color: #748386;
+        }
+        .grilla 
+        {
+            display: block;
+            
+        }
+     table
+    {
+            width: 100%;
+    }
+        .secNosotros 
+    {
+        height: 75%;
+        width: 85%;
+        align-items:flex-start;
+        justify-content: center;
+        margin: 0px;
+    }
+    .secNosotros img 
+    {
+        height: 50%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .displayEnBLoque
+    {
+     display: flex;
+     flex-direction: column;
+     margin: none;
+     padding: none;
+
+    }
+    .secGaleria 
+    {
+
+        justify-content: center;
+
+         img {
+                height: 75%;
+                width: 75%;
+                align-items:flex-start;
+            }
+         }
+    }
+
+    .piePaginaSection
+    {
+        display:block;
+        margin-top: 1em;
+        margin-bottom: 1rem;
+        width: 100% ;
+        line-height: 2rem;
+        justify-content: center;
+
+        li 
+        {
+            align-items: center;
+        }
+    }
+    
+    
+    @media only screen and (max-width:520px)
+    {
+        .division
+        {
+            background-image: none;
+            background-color:#748386;
+            height: 300px;
+        }
+        .division:hover
+        {
+           background-image: none;
+           background-color: #748386;
+        }
+        .division__titulo
+        {
+            font-size: 12px;
+        }
+        .articulo
+        {
+            font-size: 12px;
+        }
+        .section__form
+        {
+            
+            background-size: cover;
+        }
+    }
+
+    
+
+    @media only screen and (max-width:768px)
+    {
+         .grillaHome
+         {
+             grid-template-columns: 1fr;
+             grid-template-rows: 1fr 1fr 1fr 1fr;
+             margin: none;
+             padding: none;
+         }
+    }
+
