@@ -2,7 +2,7 @@
 .grillaHome {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 12rem 1fr 2fr 1fr;
   padding: none;
   grid-column-gap: 5px;
   grid-row-gap: 5px; }
@@ -27,21 +27,25 @@
   color: white;
   text-shadow: 1px 1px 2px black;
   background-image: linear-gradient(to bottom, #706563, #413937); }
+  .secNosotros img {
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 10px; }
 
 .secGaleria {
   display: block;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
-  background-color: gray; }
+  align-items: flex-start; }
 
 .secGaleria img {
   display: inline-block;
   width: 300px;
   height: 300px;
   margin: 25px;
-  padding: 25px; }
+  box-shadow: #050608 0px 20px 30px -10px;
+  border-radius: 10px; }
 
 .bodyStyle {
   font-family: 'Big Shoulders Display';
@@ -82,7 +86,7 @@
 
 .encabezado__nav ul li:hover ul, .encNosotros__nav ul li:hover ul, .encContactanos__nav ul li:hover ul, .encGaleria__nav ul li:hover ul {
   display: block;
-  background-color: black;
+  background-color: #fccf9c;
   width: 100%;
   text-align: center;
   padding: 0px; }
@@ -132,16 +136,18 @@
 
 .division {
   text-align: center;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
   background: url("../agencia/agencia11.png");
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .division:hover {
   background: url("../agencia/agencia13.png");
-  background-size: 100%;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  background-size: cover; }
 
 .division__titulo {
   text-transform: capitalize;
@@ -197,6 +203,11 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 0px; }
+
+.piePagina ul li a img, .pieNostros ul li a img, .pieContactanos ul li a img, .pieGaleria ul li a img {
+  align-items: stretch;
+  height: auto;
+  width: auto; }
 
 .piePaginaP {
   color: white;
@@ -290,12 +301,11 @@
 
 @media only screen and (max-width: 520px) {
   .division {
-    background-image: none;
-    background-image: linear-gradient(to bottom, #413937, #746764);
-    height: 300px; }
+    background-image: url(../agencia/agencia15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
   .division:hover {
-    background-image: none;
-    background-color: #746764; }
+    background-image: none; }
   .division__titulo {
     font-size: 12px; }
   .articulo {

@@ -54,7 +54,7 @@
             ul li:hover ul
             {
                 display: block;
-                background-color: black;
+                background-color: rgb(252, 207, 156);
                 width: 100%;
                 text-align: center;
                 padding: 0px;
@@ -120,18 +120,20 @@
 .division
 {
     text-align: center;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     background: url("../agencia/agencia11.png");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 .division:hover
 {
     background: url("../agencia/agencia13.png");
-    background-size: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-size: cover;
 }
 .division__titulo
 {
@@ -202,6 +204,13 @@
     padding-bottom: 2rem;
     padding-left: 0px;
     
+}
+.piePagina ul li a img 
+{
+    align-items: stretch;
+    height: auto;
+    width: auto;
+
 }
 .piePaginaP
 {
@@ -351,6 +360,7 @@
         display: flex;
         flex-direction: column;
         margin: 0px;
+        
     }
     .displayEnBLoque
     {
@@ -364,11 +374,13 @@
     {
 
         justify-content: center;
+        
 
          img {
                 height: 75%;
                 width: 75%;
                 align-items:flex-start;
+                
             }
          }
     }
@@ -391,14 +403,14 @@
     {
         .division
         {
-            background-image: none;
-            background-image: linear-gradient(to bottom,#413937,#746764  );
-            height: 300px;
+            background-image: url(../agencia/agencia15.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .division:hover
         {
            background-image: none;
-           background-color: #746764;
+           
         }
         .division__titulo
         {

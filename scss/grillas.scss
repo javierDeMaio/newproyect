@@ -3,12 +3,11 @@
 {
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 12rem 1fr 2fr 1fr;
     padding: none;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
-
 // -------------------- GRID STOCK -----------------  // 
 .grilla 
 {
@@ -32,6 +31,13 @@
   color: white;
   text-shadow: 1px 1px 2px black;
   background-image: linear-gradient(to bottom,#706563 ,#413937);
+  img
+  {
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 10px;
+  }
+
 }
 
 // -------------- FLEX GALERIA ------------------- //
@@ -42,7 +48,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: gray
     
 
 }
@@ -53,7 +58,9 @@
     width: 300px;
     height: 300px;
     margin: 25px;
-    padding: 25px;
+    box-shadow: rgb(5, 6, 8) 0px 20px 30px -10px;
+    border-radius: 10px
+
 }
   
  
