@@ -22,7 +22,6 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: flex-start;
   padding: 30px;
   color: white;
   text-shadow: 1px 1px 2px black;
@@ -302,8 +301,6 @@
 .secGaleria {
   justify-content: center; }
   .secGaleria img {
-    height: 75%;
-    width: 75%;
     align-items: flex-start; }
 
 .piePaginaSection {
