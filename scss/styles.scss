@@ -32,29 +32,33 @@
 
        li
         {
-        display:inline-block;
-        font-size: 20px;
-        position: relative;
-        text-align: center;
-        width: 19%;
-        border-width: thick;
+          display:inline-block;
+          font-size: 20px;
+          position: relative;
+          text-align: center;
+          width: 19%;
+          border-width: thick;
+        }
+        li:hover a
+        {
+          color: rgb(247, 217, 153);
         }
 
         ul ul
         {
-         position: absolute;
-         display: none;
+          position: absolute;
+          display: none;
         }
 
         ul ul li
         { 
-             display: block;
+          display: block;
             
         }
             ul li:hover ul
             {
                 display: block;
-                background-color: rgb(252, 207, 156);
+                background-color: rgb(247, 247, 247);
                 width: 100%;
                 text-align: center;
                 padding: 0px;
@@ -259,6 +263,11 @@
 {
     list-style-type: upper-roman;
     list-style-position:inside;
+}
+.input__size 
+{
+    height: 24px;
+    font-size: 14px;
 }
 
 

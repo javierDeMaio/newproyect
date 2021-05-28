@@ -77,6 +77,9 @@
   width: 19%;
   border-width: thick; }
 
+.encabezado__nav li:hover a, .encNosotros__nav li:hover a, .encContactanos__nav li:hover a, .encGaleria__nav li:hover a {
+  color: #f7d999; }
+
 .encabezado__nav ul ul, .encNosotros__nav ul ul, .encContactanos__nav ul ul, .encGaleria__nav ul ul {
   position: absolute;
   display: none; }
@@ -86,7 +89,7 @@
 
 .encabezado__nav ul li:hover ul, .encNosotros__nav ul li:hover ul, .encContactanos__nav ul li:hover ul, .encGaleria__nav ul li:hover ul {
   display: block;
-  background-color: #fccf9c;
+  background-color: #f7f7f7;
   width: 100%;
   text-align: center;
   padding: 0px; }
@@ -242,6 +245,10 @@
 .divStock__lista {
   list-style-type: upper-roman;
   list-style-position: inside; }
+
+.input__size {
+  height: 24px;
+  font-size: 14px; }
 
 #tituloHeader:hover {
   transform: scale(1.3);
