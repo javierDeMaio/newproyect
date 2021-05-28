@@ -20,8 +20,8 @@
 .secNosotros {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: flex-start;
   padding: 30px;
   color: white;
@@ -56,7 +56,8 @@
 
 #logoOsvaldo {
   margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  border-radius: 5px; }
 
 .encabezado, .encNosotros, .encContactanos, .encGaleria {
   text-align: center;
@@ -89,7 +90,7 @@
 
 .encabezado__nav ul li:hover ul, .encNosotros__nav ul li:hover ul, .encContactanos__nav ul li:hover ul, .encGaleria__nav ul li:hover ul {
   display: block;
-  background-color: #f7f7f7;
+  background-color: #ffebb4;
   width: 100%;
   text-align: center;
   padding: 0px; }
@@ -206,6 +207,23 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 0px; }
+  .piePagina_ul ul {
+    list-style: none;
+    font-size: 0;
+    padding: 0px; }
+  .piePagina_ul li:hover a {
+    color: #f7d999; }
+  .piePagina_ul ul li:hover ul {
+    display: block;
+    background-color: #f7f7f7;
+    width: 100%;
+    text-align: center;
+    padding: 0px; }
+  .piePagina_ul a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Big Shoulders Display'; }
 
 .piePagina ul li a img, .pieNostros ul li a img, .pieContactanos ul li a img, .pieGaleria ul li a img {
   align-items: stretch;
@@ -268,35 +286,25 @@
     margin-bottom: 1rem;
     line-height: 2rem;
     column-gap: 1px; }
-  .encabezado__nav ul, .encNosotros__nav ul, .encContactanos__nav ul, .encGaleria__nav ul {
-    background-color: #748386; }
+  .encabezado__nav li, .encNosotros__nav li, .encContactanos__nav li, .encGaleria__nav li {
+    box-shadow: #332c2a 0px 20px 30px -10px; }
   .grilla {
     display: block; }
   table {
-    width: 100%; }
-  .secNosotros {
+    width: 100%; } }
+
+.displayEnBLoque {
+  display: flex;
+  flex-direction: column;
+  margin: none;
+  padding: none; }
+
+.secGaleria {
+  justify-content: center; }
+  .secGaleria img {
     height: 75%;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0px; }
-  .secNosotros img {
-    height: 50%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 0px; }
-  .displayEnBLoque {
-    display: flex;
-    flex-direction: column;
-    margin: none;
-    padding: none; }
-  .secGaleria {
-    justify-content: center; }
-    .secGaleria img {
-      height: 75%;
-      width: 75%;
-      align-items: flex-start; } }
+    width: 75%;
+    align-items: flex-start; }
 
 .piePaginaSection {
   display: block;
@@ -318,7 +326,19 @@
   .articulo {
     font-size: 12px; }
   .section__form {
-    background-size: cover; } }
+    background-size: cover; }
+  .secNosotros {
+    place-content: center;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px; }
+  .secNosotros img {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px; } }
 
 @media only screen and (max-width: 768px) {
   .grillaHome {

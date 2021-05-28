@@ -8,6 +8,7 @@
 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    border-radius: 5px;
 }
 .encabezado 
 {
@@ -58,7 +59,7 @@
             ul li:hover ul
             {
                 display: block;
-                background-color: rgb(247, 247, 247);
+                background-color: rgb(255, 235, 180);
                 width: 100%;
                 text-align: center;
                 padding: 0px;
@@ -207,7 +208,32 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 0px;
+    ul
+    {
+        list-style: none;
+        font-size: 0;
+        padding: 0px;
     
+    }
+        li:hover a
+        {
+          color: rgb(247, 217, 153);
+        }
+            ul li:hover ul
+            {
+                display: block;
+                background-color: rgb(247, 247, 247);
+                width: 100%;
+                text-align: center;
+                padding: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                text-shadow: 1px 1px 2px black;
+                font-family: 'Big Shoulders Display';
+              }
 }
 .piePagina ul li a img 
 {
@@ -224,7 +250,7 @@
 .pie__boton
 {
     padding-bottom: 1rem;
-}
+}   
 
 .secStock
 {
@@ -340,37 +366,23 @@
         line-height: 2rem;
         column-gap: 1px;
     }
-        .encabezado__nav ul 
-        {
-            background-color: #748386;
-        }
+    .encabezado__nav li
+    {
+        box-shadow: #332c2a 0px 20px 30px -10px;
+    }
         .grilla 
         {
             display: block;
             
         }
-     table
-    {
+         table
+        {
             width: 100%;
-    }
-        .secNosotros 
-    {
-        height: 75%;
-        width: 100%;
-        align-items:flex-start;
-        justify-content: center;
-        margin: 0px;
+        }
+       
         
     }
-    .secNosotros img 
-    {
-        height: 50%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        
-    }
+    
     .displayEnBLoque
     {
      display: flex;
@@ -391,8 +403,8 @@
                 align-items:flex-start;
                 
             }
-         }
-    }
+}
+    
 
     .piePaginaSection
     {
@@ -434,6 +446,24 @@
             
             background-size: cover;
         }
+        .secNosotros
+        {
+            place-content: center;
+            width: 100%;
+            align-items:flex-start;
+            justify-content: center;
+            margin: 0px;
+        }
+        .secNosotros img
+        {
+          height: 200px;
+          width: 200px;
+          display: flex;
+          flex-direction:row;
+          margin: 0px;
+        
+        }
+        
     }
 
     
